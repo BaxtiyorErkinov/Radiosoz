@@ -1,0 +1,118 @@
+.prev__and__next__wrapper {
+	width: 100%;
+	.prev__item {
+		height: 400px;
+		position: relative;
+		&__banner {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			&__item {
+				width: 100%;
+				height: 100%;
+				transform: scale(1.1);
+				transition: all 0.8s;
+			}
+		}
+		&__info {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			padding: 10px 100px;
+			background-color: #000;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			transition: all 0.5s;
+
+			@media screen and (max-width: 768px) {
+				padding: 10px 30px;
+			}
+
+			&__arrow {
+				&__item {
+					border: 1px solid #fff;
+					border-radius: 50%;
+					padding: 15px;
+					color: #fff;
+				}
+			}
+		}
+		&__title {
+			&__item {
+				font-weight: bold;
+				color: #fff;
+				font-size: 50px;
+			}
+		}
+		&:hover .prev__item__info {
+			cursor: pointer;
+			transition: all 0.5s;
+			background-color: rgba(0, 0, 0, 0.8);
+		}
+
+		&:hover .prev__item__banner__item {
+			transition: all 0.8s;
+			transform: scale(1);
+		}
+	}
+	.next__item {
+		height: 400px;
+		position: relative;
+		&__banner {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			&__item {
+				width: 100%;
+				height: 100%;
+				transform: scale(1.1);
+				transition: all 0.8s;
+			}
+		}
+		&__info {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			padding: 10px 100px;
+			background-color: #000;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			transition: all 0.5s;
+			@media screen and (max-width: 768px) {
+				padding: 10px 30px;
+			}
+
+			&__arrow {
+				&__item {
+					border: 1px solid #fff;
+					border-radius: 50%;
+					padding: 15px;
+					color: #fff;
+				}
+			}
+		}
+		&__title {
+			&__item {
+				font-weight: bold;
+				color: #fff;
+				font-size: 50px;
+			}
+		}
+		&:hover .next__item__info {
+			cursor: pointer;
+			transition: all 0.5s;
+			background-color: rgba(0, 0, 0, 0.8);
+		}
+
+		&:hover .next__item__banner__item {
+			transition: all 0.8s;
+			transform: scale(1);
+		}
+	}
+}

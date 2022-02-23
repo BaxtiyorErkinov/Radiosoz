@@ -1,0 +1,87 @@
+.posts__container {
+    padding: 30px 40px;
+    @media screen and (max-width: 500px) {
+        padding: 30px 10px;
+    }
+    .posts__title {
+        &__item {
+            letter-spacing: 5px;
+            font-family: sans-serif;
+            color: rgb(112, 108, 108);
+        }
+    }
+    .posts__desc {
+        margin-bottom: 20px;
+        &__item {
+            font-size: 60px;
+            font-weight: bold;
+            color: #000;
+            @media screen and (max-width: 500px) {
+                font-size: 30px;
+            }
+        }
+    }
+    .postblog__container {
+        padding: 20px;
+        cursor: pointer;
+        .postblog__img {
+            // padding: 0px 30px;
+            overflow: hidden;
+            &__item {
+                width: 100%;
+                transform: scale(1);
+                transition: all .3s;
+                &:hover {
+                    transform: scale(1.1);
+                    transition: all .3s;
+                }
+            }
+        }
+        .postblog__date {
+            padding: 10px 0px 0px 0px;
+            margin-bottom: 0;
+            &__item {
+                font-size: 15px;
+                font-family: sans-serif;
+            }
+        }
+        .postblog__title {
+            width: 90%;
+            margin-top: 0;
+            &__item {
+                font-size: 25px;
+                font-weight: bold;
+                font-family: sans-serif;
+                color: #000;
+                transition: all .3s;
+
+                &:hover {
+                    color: #ee1e1e;
+                    transition: all .3s;
+                }
+            }
+        }
+        .postblog__action {
+            padding: 10px 5px;
+            &__btn {
+                border: none;
+                font-family: sans-serif;
+                background-color: #fff;
+                &__icon {
+                    transition: all .4s;
+                    margin-left: 5px;
+                    font-size: 18px;
+                }
+            }
+            &:hover .postblog__action__btn__icon {
+                color: #ee1e1e;
+                transition: all .4s;
+                margin-left: 10px;
+            }
+            &:hover .postblog__action__btn {
+                color: #ee1e1e;
+            } 
+        }
+
+    }
+}

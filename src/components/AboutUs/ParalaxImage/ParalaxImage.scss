@@ -1,0 +1,9 @@
+.paralax__image__wrapper {
+    padding: 40px 70px;
+    @media screen and (max-width: 500px) {
+        padding: 40px 0px;
+    }
+    .paralax__banner__img {
+        width: 100%;
+    }
+}

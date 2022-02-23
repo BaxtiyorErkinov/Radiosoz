@@ -1,0 +1,30 @@
+.pricing__page__wrapper {
+    padding: 40px 0px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    &__title {
+        &__item {
+            letter-spacing: 5px;
+            font-family: sans-serif;
+            color: rgb(85, 81, 81);
+        }
+    }
+
+    &__subtitle {
+
+        &__item {
+            font-weight: bold;
+            font-size: 60px;
+            font-family: Ubuntu;
+
+            @media screen and (max-width: 500px) {
+                font-size: 50px;
+            }
+        }
+    }
+}

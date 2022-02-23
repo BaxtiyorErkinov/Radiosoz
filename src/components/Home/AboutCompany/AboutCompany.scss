@@ -1,0 +1,41 @@
+.Wrapper {
+    padding: 100px 70px;
+    @media screen and (max-width: 768px) {
+        padding: 80px 20px;
+    }
+    .title {
+        margin-bottom: 5px;
+        p {
+            letter-spacing: 5px;
+            font-size: 18px;
+            color: #000;
+        }
+    }
+    .subtitle {
+        margin-bottom: 25px;
+        // width: 550px;
+        &__text {
+            font-size: 70px;
+            font-weight: bold;
+            @media screen and (max-width: 768px) {
+                font-size: 45px;
+            }
+        }
+    }
+    .blogs {
+        .blogs__title {
+            padding: 5px;
+            &__text {
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+        .blogs__description {
+            padding: 5px;
+            &__text {
+                font-size: 16px;
+                color: rgb(92, 88, 88);
+            }
+        }
+    }
+}

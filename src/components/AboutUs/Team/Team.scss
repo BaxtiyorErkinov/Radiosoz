@@ -1,0 +1,84 @@
+.team__container {
+    padding: 20px 70px;
+    margin-bottom: 30px;
+    @media screen and (max-width: 768px) {
+    padding: 20px 30px;
+        
+    }
+    .team {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        &__title {
+            &__item {
+                letter-spacing: 5px;
+                font-family: sans-serif;
+                color: rgb(80, 74, 74);
+            }
+        }
+        &__title__2 {
+            &__item {
+                font-weight: bold;
+                font-size: 50px;
+                font-family: sans-serif;
+                color: #000;
+            }
+        }
+
+        &__title__desc {
+            width: 60%;
+            text-align: center;
+            &__item {
+                font-size: 17px;
+                font-family: sans-serif;
+                color: rgb(94, 89, 89);
+            }
+        }
+    }
+    .team__members {
+        margin-top: 20px;
+        .team__member {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &__img {
+                display: flex;
+                justify-content: center;
+                &__item {
+                    width: 90%;
+                    height: 500px;
+                }
+                margin-bottom: 10px;
+            }
+
+            &__fullName {
+                &__item {
+                    font-weight: bold;
+                    font-family: Ubuntu;
+                }
+            }
+            &__job {
+                &__item {
+                    font-size: 14px;
+                    letter-spacing: 3px;
+                    color: rgb(100, 96, 96);
+                }
+            }
+            &__social__networks {
+                &__item {
+                    font-size: 20px;
+                    margin: 0px 10px;
+                    cursor: pointer;
+                    transition: all .3s;
+
+                    &:hover {
+                        transition: all .3s;
+                        color: #ca1919;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.about__of__company {
+    margin-top: 50px;
+    padding: 20px 50px;
+    @media screen and (max-width: 500px) {
+        padding: 20px 30px;
+    }
+    .page__title {
+        padding: 20px;
+
+        @media screen and (max-width: 500px) {
+            padding: 10px;
+        }
+        &__item {
+            font-weight: bold;
+            color: #000;
+        }
+    }
+    .page__desc {
+        padding: 30px;
+
+        @media screen and (max-width: 500px) {
+            padding: 20px;
+        }
+        &__item {
+            font-size: 17px;
+            color: rgb(95, 89, 89);
+        }
+        &__item__2 {
+            font-size: 17px;
+            color: rgb(95, 89, 89);
+        }
+    }
+}

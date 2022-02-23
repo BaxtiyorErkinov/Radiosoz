@@ -1,0 +1,68 @@
+.paralax__banner {
+    margin-bottom: 20px;
+    &__img {
+        width: 100%;
+        height: 600px;
+    }
+    .paralax__blog {
+        padding: 50px 50px;
+        @media screen and (max-width: 500px) {
+            padding: 50px 30px;
+        }
+        &__title {
+            margin-bottom: 15px;
+            &__item {
+                letter-spacing: 5px;
+                font-family: sans-serif;
+            }
+        }
+        &__subtitle {
+            &__item {
+                font-size: 80px;
+                font-weight: bold;
+                left: -85px;
+                position: relative;
+                z-index: 10;
+                margin: 2px 0px;
+
+                @media screen and (max-width: 768px) {
+                    position: static;
+                    font-size: 60px;
+                }
+                @media screen and (max-width: 500px) {
+                    font-size: 40px;
+                }
+            }
+        }
+        &__desc {
+            width: 80%;
+            padding: 25px;
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+            &__item {
+                font-family: sans-serif;
+                color: rgb(97, 92, 92);
+            }
+        }
+        &__action {
+            padding: 25px;
+            &__btn {
+                width: 130px;
+                padding: 10px;
+                border-radius: 20px;
+                border: 1px solid #000;
+                background-color: #fff;
+                font-family: Ubuntu;
+                transition: all .3s;
+                &:hover {
+                    background-color: #000;
+                    color:  #fff;
+                    transition: all .3s;
+
+                }
+            }
+        }
+    }
+}

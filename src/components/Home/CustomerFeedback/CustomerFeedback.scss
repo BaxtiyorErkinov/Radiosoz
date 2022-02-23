@@ -1,0 +1,100 @@
+.customerfd__container {
+  width: 100%;
+  height: 100vh;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background-image: url("../../../../public/images/img-2.jpg");
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-slide::after {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.swiper {
+  margin-left: 0;
+  margin-right: 0;
+}
+.my-custom-pagination-div {
+  position: absolute;
+  top: 20%;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  color: grey;
+}
+.swiper-pagination-bullet {
+  background-color: rgb(129, 126, 126);
+  width: 20px;
+  height: 20px;
+}
+.slide__info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+.slide__info__text {
+  margin-top: 50px;
+  padding: 0px 20%;
+  margin-bottom: 20px;
+}
+.slide__info__text__item {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Ubuntu;
+  color: #fff;
+}
+@media screen and (max-width: 400px) {
+  .slide__info__text__item {
+    font-size: 20px;
+  }
+}
+.avatar {
+  margin-bottom: 20px;
+}
+.user__info {
+}
+.user__name {
+  font-size: 18px;
+  font-weight: bold;
+}
+.user__job {
+  font-size: 15px;
+  color: rgb(221, 213, 213);
+}
