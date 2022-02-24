@@ -1,16 +1,11 @@
 import React, { useEffect } from "react";
 import { Grid } from "@mui/material";
 import "./Portfolio.scss";
-import Img1 from "../../assets/images/portfolio-item-1.jpg";
-import Img2 from "../../assets/images/portfolio-item-2.jpg";
-import Img3 from "../../assets/images/portfolio-item-3.jpg";
-import Img4 from "../../assets/images/portfolio-item-4.jpg";
-import Img5 from "../../assets/images/portfolio-item-5.jpg";
-import Img6 from "../../assets/images/portfolio-item-6.jpg";
 import BackgroundImg from "../../assets/images/portfolio-background.jpg";
 import PortfolioItems from "./PortfolioItems";
 import { useSelector, useDispatch } from "react-redux";
 import { portfolioAction } from "../../store/action-creators/portfolioAction";
+import { motion } from "framer-motion";
 
 const Portfolio = () => {
   const portfolioItems = useSelector((state) => state.portfolios.portfolios);
@@ -42,13 +37,18 @@ const Portfolio = () => {
         <p className="portfolio__title__title">Portfolios</p>
         <h1 className="portfolio__title__subtitle">All Portfolios</h1>
       </div>
-      <div className="portfolio__list">
+      <motion.div
+        className="portfolio__list"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ amount: 0.5, once: false }}
+      >
         <Grid container>
-          {portfolioItems.map((item) => {
-            return (<PortfolioItems item={item} key={item.id} />)
+          {portfolioItems.map((item, index) => {
+            return <PortfolioItems item={item} key={item.id} index={index} />;
           })}
         </Grid>
-      </div>
+      </motion.div>
     </>
   );
 };

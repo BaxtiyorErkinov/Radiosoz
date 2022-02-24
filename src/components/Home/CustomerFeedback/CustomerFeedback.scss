@@ -24,7 +24,6 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  background-image: url("../../../../public/images/img-2.jpg");
 }
 
 .swiper-slide img {
@@ -56,6 +55,13 @@
   width: 20px;
   height: 20px;
 }
+
+.customer__feedback__banner {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../assets/images/img-2.jpg");
+}
+
 .slide__info {
   position: absolute;
   top: 0;

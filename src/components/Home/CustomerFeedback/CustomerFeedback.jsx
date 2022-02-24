@@ -23,6 +23,7 @@ export default function App() {
         >
           <div className="my-custom-pagination-div"></div>
           <SwiperSlide>
+            <div className="customer__feedback__banner"></div>
             <div className="slide__info">
               <div className="slide__info__text">
                 <p className="slide__info__text__item">
@@ -45,6 +46,8 @@ export default function App() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
+            <div className="customer__feedback__banner"></div>
+
             <div className="slide__info">
               <div className="slide__info__text">
                 <p className="slide__info__text__item">
@@ -67,6 +70,8 @@ export default function App() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
+            <div className="customer__feedback__banner"></div>
+
             <div className="slide__info">
               <div className="slide__info__text">
                 <p className="slide__info__text__item">

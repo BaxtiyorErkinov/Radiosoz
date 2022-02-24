@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
+import { motion } from "framer-motion";
 import "./PortfolioDetail.scss";
 import AboutOfProject from "./AboutOfProject";
 import PortfolioDetailParalaxImg from "./PortfolioDetailParalaxImg";
@@ -10,6 +11,20 @@ import MoreAboutProject from "./MoreAboutProject";
 import PortfolioSlider from "./portfolioSlider";
 import PrevAndNextPortfolios from "./PrevAndNextPortfolio";
 
+const textAnimation = {
+  hidden: {
+    y: -100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: custom * 2,
+    },
+  }),
+};
+
 const PortfolioDetail = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
@@ -18,17 +33,29 @@ const PortfolioDetail = () => {
   console.log(getSingleItem);
 
   return (
-    <div className="portfolio__single__item">
+    <motion.div
+      className="portfolio__single__item"
+      initial="hidden"
+      whileInView="visible"
+    >
       {getSingleItem.map((item) => (
         <>
           <div className="portfolio__single__item__banner">
             <div className="portfolio__single__item__banner__item">
-              <p className="portfolio__single__item__banner__item__title">
+              <motion.p
+                custom={1}
+                variants={textAnimation}
+                className="portfolio__single__item__banner__item__title"
+              >
                 {item.title}
-              </p>
-              <h1 className="portfolio__single__item__banner__item__subtitle">
+              </motion.p>
+              <motion.h1
+                custom={2}
+                variants={textAnimation}
+                className="portfolio__single__item__banner__item__subtitle"
+              >
                 {item.subtitle}
-              </h1>
+              </motion.h1>
             </div>
           </div>
           <AboutOfProject item={item} />
@@ -40,7 +67,7 @@ const PortfolioDetail = () => {
           <PrevAndNextPortfolios item={item.id} />
         </>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
