@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { motion } from "framer-motion";
@@ -9,7 +9,10 @@ import AboutTheFirm from "./AboutTheFirm";
 import PortfolioImgSecond from "./PortfolioImgSecond";
 import MoreAboutProject from "./MoreAboutProject";
 import PortfolioSlider from "./portfolioSlider";
+import Conclusion from "./Conclusion";
 import PrevAndNextPortfolios from "./PrevAndNextPortfolio";
+import PortfolioImgThird from "./PortfolioImgThird";
+import { loadingAction } from "../../store/action-creators/loaderAction";
 
 const textAnimation = {
   hidden: {
@@ -20,7 +23,7 @@ const textAnimation = {
     y: 0,
     opacity: 1,
     transition: {
-      delay: custom * 2,
+      delay: custom * 0.5,
     },
   }),
 };
@@ -30,7 +33,10 @@ const PortfolioDetail = () => {
   const dispatch = useDispatch();
   const getItem = useSelector((state) => state.portfolios.portfolios);
   const getSingleItem = getItem.filter((el) => el.id == id);
-  console.log(getSingleItem);
+
+  useEffect(() => {
+    dispatch(loadingAction());
+  });
 
   return (
     <motion.div
@@ -64,6 +70,8 @@ const PortfolioDetail = () => {
           <PortfolioImgSecond item={item} />
           <MoreAboutProject />
           <PortfolioSlider item={item.sliderItems} />
+          <Conclusion />
+          <PortfolioImgThird item={item} />
           <PrevAndNextPortfolios item={item.id} />
         </>
       ))}

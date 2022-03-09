@@ -4,7 +4,7 @@ import { Pagination, FreeMode } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 // import "swiper/css/free-mode";
-import "./portfolioSlider.css";
+import "./portfolioSlider.scss";
 
 const PortfolioSlider = ({ item }) => {
 	console.log(item);
@@ -17,7 +17,7 @@ const PortfolioSlider = ({ item }) => {
 					clickable: true,
 					el: ".pagination-div",
 					clickable: true,
-					bulletClass: "swiper-pagination-bullett",
+					bulletClass: "swiper-pagination-bullet",
 				}}
 				modules={[Pagination]}
 				className="mySwiper"

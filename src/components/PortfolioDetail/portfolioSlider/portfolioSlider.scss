@@ -38,14 +38,24 @@
   z-index: 200;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 20px 0px;
-}
-.swiper-pagination-bullett {
-  background-color: #000;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  margin: 0px 5px;
+
+  .swiper-pagination-bullet {
+    background-color: #000;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0px 5px;
+    transition: all 0.5s;
+  }
+  .swiper-pagination-bullet-active {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #000;
+    transition: all 0.5s;
+  }
 }
 
 /*@media screen and (max-width: 640px) {

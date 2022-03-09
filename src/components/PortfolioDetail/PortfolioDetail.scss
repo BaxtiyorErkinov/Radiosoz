@@ -8,7 +8,7 @@
         background-attachment: fixed;
         background-image: url("../../assets/images/portfolio-detail-banner.png");
         &__item {
-            position:absolute;
+            position: absolute;
             top: 0;
             left: 0;
             right: 0;
@@ -51,7 +51,6 @@
                 font-size: 18px;
                 color: rgb(46, 43, 43);
                 text-align: center;
-
             }
         }
 
@@ -62,14 +61,12 @@
                 font-size: 18px;
                 font-family: sans-serif;
                 text-align: center;
-
             }
             &__item {
                 font-family: sans-serif;
                 font-size: 18px;
                 color: rgb(46, 43, 43);
                 text-align: center;
-
             }
         }
         &__launch {
@@ -79,7 +76,6 @@
                 font-size: 18px;
                 font-family: sans-serif;
                 text-align: center;
-
             }
 
             &__item {
@@ -87,7 +83,6 @@
                 font-size: 18px;
                 color: rgb(46, 43, 43);
                 text-align: center;
-
             }
         }
 
@@ -98,7 +93,6 @@
                 font-size: 18px;
                 font-family: sans-serif;
                 text-align: center;
-
             }
 
             &__item {
@@ -106,7 +100,6 @@
                 font-size: 18px;
                 color: rgb(46, 43, 43);
                 text-align: center;
-
             }
         }
     }
@@ -128,7 +121,7 @@
         @media screen and (max-width: 500px) {
             padding: 10px 40px;
         }
-        .about__the__firm{
+        .about__the__firm {
             width: 100%;
             &__title {
                 &__item {
@@ -160,7 +153,6 @@
                 color: rgb(66, 64, 64);
             }
         }
-
     }
     .portfolio__img__second {
         margin: 40px 0px;
@@ -169,5 +161,13 @@
             height: 450px;
         }
     }
+    .portfolio__img__third {
+        margin: 40px 0px 0px 0px;
+        overflow: hidden;
+        .portfolio__item__img__paralax__third {
+            width: 100%;
+            height: 450px;
+            transform: scale(1.1);
+        }
+    }
 }
-

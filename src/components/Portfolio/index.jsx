@@ -12,8 +12,8 @@ const Portfolio = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(portfolioAction());
-  }, []);
+    portfolioAction();
+  });
 
   return (
     <>

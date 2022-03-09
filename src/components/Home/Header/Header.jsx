@@ -32,9 +32,9 @@ const Header = () => {
   ];
 
   const getNewPage = () => {
-    setIsBoxActive(false)
-    window.scroll(0,0)
-  }
+    setIsBoxActive(false);
+    window.scroll(0, 0);
+  };
 
   useEffect(() => {
     const onScroll = () => setOffset(window.pageYOffset);
@@ -67,8 +67,8 @@ const Header = () => {
                 to={nav.url}
                 onClick={getNewPage}
                 className={({ isActive }) =>
-                isActive ? "active__link" : undefined
-              }
+                  isActive ? "active__link" : undefined
+                }
               >
                 {nav.title}
               </NavLink>
