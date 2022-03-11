@@ -1,5 +1,6 @@
 .posts__container {
     padding: 30px 40px;
+    margin: 50px 0px;
     @media screen and (max-width: 500px) {
         padding: 30px 10px;
     }
@@ -30,10 +31,10 @@
             &__item {
                 width: 100%;
                 transform: scale(1);
-                transition: all .3s;
+                transition: all 0.3s;
                 &:hover {
                     transform: scale(1.1);
-                    transition: all .3s;
+                    transition: all 0.3s;
                 }
             }
         }
@@ -53,11 +54,11 @@
                 font-weight: bold;
                 font-family: sans-serif;
                 color: #000;
-                transition: all .3s;
+                transition: all 0.3s;
 
                 &:hover {
                     color: #ee1e1e;
-                    transition: all .3s;
+                    transition: all 0.3s;
                 }
             }
         }
@@ -68,20 +69,19 @@
                 font-family: sans-serif;
                 background-color: #fff;
                 &__icon {
-                    transition: all .4s;
+                    transition: all 0.4s;
                     margin-left: 5px;
                     font-size: 18px;
                 }
             }
             &:hover .postblog__action__btn__icon {
                 color: #ee1e1e;
-                transition: all .4s;
+                transition: all 0.4s;
                 margin-left: 10px;
             }
             &:hover .postblog__action__btn {
                 color: #ee1e1e;
-            } 
+            }
         }
-
     }
 }

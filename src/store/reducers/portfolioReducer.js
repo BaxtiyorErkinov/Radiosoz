@@ -1,4 +1,4 @@
-import { GET_PORTFOLIOS } from "../action-types/portfolioActionTypes";
+import { GET_PORTFOLIOS } from "../action-types/";
 import Img1 from "../../assets/images/portfolio-item-1.jpg";
 import Img2 from "../../assets/images/portfolio-item-2.jpg";
 import Img3 from "../../assets/images/portfolio-item-3.jpg";

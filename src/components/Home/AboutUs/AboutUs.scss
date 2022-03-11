@@ -1,5 +1,5 @@
 .paralax__banner {
-    margin-bottom: 20px;
+    margin: 70px 0px;
     &__img {
         width: 100%;
         height: 600px;
@@ -55,12 +55,11 @@
                 border: 1px solid #000;
                 background-color: #fff;
                 font-family: Ubuntu;
-                transition: all .3s;
+                transition: all 0.3s;
                 &:hover {
                     background-color: #000;
-                    color:  #fff;
-                    transition: all .3s;
-
+                    color: #fff;
+                    transition: all 0.3s;
                 }
             }
         }

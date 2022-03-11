@@ -1,7 +1,4 @@
-import {
-	START_LOADING,
-	FINISH_LOADING,
-} from "../action-types/portfolioActionTypes";
+import { START_LOADING, FINISH_LOADING } from "../action-types/";
 
 export const loadingAction = () => {
 	return (dispatch) => {

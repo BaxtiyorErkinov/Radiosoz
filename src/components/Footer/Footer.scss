@@ -31,7 +31,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
+
         @media screen and (max-width: 500px) {
             justify-content: flex-start;
             align-items: flex-start;
@@ -39,7 +39,7 @@
         &__title {
             margin-left: 20px;
             color: #fff;
-            font-weight: bold; 
+            font-weight: bold;
             @media screen and (max-width: 500px) {
                 margin: 0;
                 margin-bottom: 10px;
@@ -71,17 +71,17 @@
                         right: 0;
                         margin: auto;
                         width: 0%;
-                        content: '.';
+                        content: ".";
                         color: transparent;
                         background: #ca1919;
                         height: 1px;
-                        transition: all .5s;
+                        transition: all 0.5s;
                         margin-bottom: -3px;
                     }
                     &:hover:after {
                         width: 100%;
-                        transition: all .5s;
-                      }
+                        transition: all 0.5s;
+                    }
                 }
             }
         }
@@ -91,32 +91,31 @@
             margin-bottom: 25px;
             &__item {
                 color: #fff;
-                font-weight: bold; 
-
+                font-weight: bold;
             }
         }
         .social__media__links {
             &__item {
                 margin: 5px;
                 cursor: pointer;
-                width: 50px; 
+                width: 50px;
                 height: 50px;
                 padding: 10px;
                 border-radius: 50%;
                 border: 1px solid grey;
                 color: #fff;
                 font-size: 20px;
-                transition: all .3s;
+                transition: all 0.3s;
 
                 &:hover {
                     color: #ca1919;
-                    transition: all .3s;
-                } 
+                    transition: all 0.3s;
+                }
             }
         }
     }
     &__end__section {
-        color:rgb(196, 181, 181);
+        color: rgb(196, 181, 181);
     }
 }
 hr {

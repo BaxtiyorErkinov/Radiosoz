@@ -18,7 +18,7 @@ const HeroSlider = () => {
       title: "DESIGN INSPIRATION",
       desc: "We create modern experiences fortomorrows brands.",
       img:
-        "https://cdn.pixabay.com/photo/2021/12/23/03/58/da-guojing-6888603__480.jpg",
+        "https://cdn.pixabay.com/photo/2020/12/22/00/06/river-5851177__340.jpg",
     },
     {
       id: 2,
@@ -143,14 +143,6 @@ const HeroSlider = () => {
       fadeIn(1, 1);
     }
   };
-
-  function interval() {
-    setTimeout(() => {
-      nextSlide();
-    }, 2000);
-  }
-
-  interval();
 
   return (
     <div className="testimonial-section">

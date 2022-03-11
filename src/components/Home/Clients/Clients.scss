@@ -34,42 +34,47 @@
         border-radius: 5px;
         width: 100%;
         height: 150px;
-        background-color: green;
         position: relative;
-        transition: all .4s ease;
-        z-index:2; 
+        transition: all 0.4s ease;
+        z-index: 2;
         overflow: hidden;
         &__logo {
             width: 100%;
             height: 150px;
             border-radius: 5px;
+            overflow: hidden;
             &__item {
                 height: 150px;
                 border-radius: 5px;
                 width: 100%;
-                transition: all .4s ease;
+                transition: all 0.4s ease;
             }
+        }
+        &:hover .card__item__logo__item {
+            transition: ease 0.2s;
+            transform: scale(0.8);
         }
 
         &__info {
-            z-index:1;
-            position:absolute;
-            top:calc(100% - 2px);
-            height:100%;
-            width:100%;
-            left:0;
-            background:rgba($color: #000000, $alpha: 0.9);
-            transition:0.5s;
+            z-index: 1;
+            position: absolute;
+            top: calc(100% - 2px);
+            height: 100%;
+            width: 100%;
+            left: 0;
+            background: rgba($color: #000000, $alpha: 0.9);
+            transition: 0.5s;
             display: flex;
             justify-content: center;
             align-items: center;
             color: #fff;
             &__text {
-
+                font-family: Ubuntu;
+                font-weight: 600;
             }
         }
         &:hover .card__item__info {
-            top:0;
+            top: 0;
         }
     }
 }

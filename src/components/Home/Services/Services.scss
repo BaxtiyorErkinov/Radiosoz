@@ -1,10 +1,9 @@
 .services__wrapper {
-    margin-bottom: 70px;
+    margin: 70px 0px;
     .services__about {
         padding: 10px 60px;
         @media screen and (max-width: 768px) {
-        padding: 10px 50px;
-            
+            padding: 10px 50px;
         }
     }
     .services__title {
@@ -30,7 +29,8 @@
         .services {
             padding: 5px;
             &__logo {
-                box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+                box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+                    rgba(17, 17, 26, 0.05) 0px 8px 32px;
                 width: 75px;
                 height: 75px;
                 border-radius: 50%;
@@ -39,7 +39,7 @@
                 justify-content: center;
                 &__item {
                     font-size: 30px;
-                    color: #D2042D;
+                    color: #d2042d;
                 }
             }
             &__title {
@@ -60,5 +60,4 @@
             }
         }
     }
-
 }

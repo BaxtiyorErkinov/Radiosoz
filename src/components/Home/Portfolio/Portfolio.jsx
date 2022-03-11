@@ -29,7 +29,7 @@ const Portfolio = () => {
                 <div className="portfolio__item__img">
                   <LazyLoadImage
                     effect="blur"
-                    src={item.image}
+                    src={`http://127.0.0.1:8000${item.image}/`}
                     alt={item.title}
                     height={400}
                     className="portfolio__item__img__item"
