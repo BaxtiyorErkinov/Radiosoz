@@ -31,7 +31,7 @@ const Portfolio = () => {
                     effect="blur"
                     src={`http://127.0.0.1:8000${item.image}/`}
                     alt={item.title}
-                    height={400}
+                    height={500}
                     className="portfolio__item__img__item"
                   />
                 </div>

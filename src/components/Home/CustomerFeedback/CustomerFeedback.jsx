@@ -21,7 +21,9 @@ export default function App() {
           modules={[Pagination]}
           className="mySwiper"
         >
-          <div className="my-custom-pagination-div"></div>
+          <div className="pagination-container">
+            <div className="my-custom-pagination-div"></div>
+          </div>
           <SwiperSlide>
             <div className="customer__feedback__banner"></div>
             <div className="slide__info">
