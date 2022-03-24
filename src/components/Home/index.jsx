@@ -7,8 +7,6 @@ import CustomerFeedback from "./CustomerFeedback/CustomerFeedback";
 import HeroSlider from "./HeroSlider/HeroSlider";
 import Portfolio from "./Portfolio/Portfolio";
 import Services from "./Services/Services";
-import { useDispatch } from "react-redux";
-import { loadingAction } from "../../store/action-creators/loaderAction";
 
 const Home = () => {
   return (

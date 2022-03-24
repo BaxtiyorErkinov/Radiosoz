@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { clientsAction } from "../../../store/action-creators/clientsAction";
-import { Grid } from "@mui/material";
-import { motion } from "framer-motion";
-import "./Clients.scss";
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { clientsAction } from '../../../store/action-creators/clientsAction';
+import { Grid } from '@mui/material';
+import { motion } from 'framer-motion';
+import './Clients.scss';
 
 const clientsCardAnimation = {
   hidden: {
@@ -82,8 +82,7 @@ const Clients = () => {
       className="card__container"
       initial="hidden"
       whileInView="visible"
-      viewport={{ amount: 0.2, once: true }}
-    >
+      viewport={{ amount: 0.2, once: true }}>
       <div className="card__title">
         <p className="card__title__item">CLIENTS & FRIENDS</p>
       </div>
@@ -98,12 +97,11 @@ const Clients = () => {
             <motion.div
               className="card__item"
               custom={index}
-              variants={clientsCardAnimation}
-            >
+              variants={clientsCardAnimation}>
               <div className="card__item__logo">
                 <img
                   className="card__item__logo__item"
-                  src={`http://127.0.0.1:8000${item.image}`}
+                  src={`http://backend.radiosoz.uz${item.image}`}
                   alt="twit"
                 />
               </div>

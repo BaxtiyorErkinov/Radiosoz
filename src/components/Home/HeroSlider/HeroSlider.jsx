@@ -3,6 +3,7 @@ import { IconButton, Grid } from "@mui/material";
 import { HiOutlineArrowRight, HiOutlineArrowLeft } from "react-icons/hi";
 import { TweenLite, TweenMax, Power3 } from "gsap";
 import "./Slider.scss";
+
 const HeroSlider = () => {
   let imageList = useRef(null);
   let testimonialList = useRef(null);
@@ -213,3 +214,4 @@ const HeroSlider = () => {
 };
 
 export default HeroSlider;
+
