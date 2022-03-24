@@ -26,12 +26,10 @@ const Portfolio = () => {
               } ${index === 3 ? 'sm_portfolio' : ''}`}>
               <div className="portfolio__item">
                 <div className="portfolio__item__img">
-                  <LazyLoadImage
+                  <img
                     effect="blur"
                     src={`http://backend.radiosoz.uz${item.image}/`}
                     alt={item.title}
-                    width={400}
-                    height={500}
                     className="portfolio__item__img__item"
                   />
                 </div>
