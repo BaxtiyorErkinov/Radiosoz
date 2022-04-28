@@ -4,10 +4,14 @@
     justify-content: space-between;
     align-items: center;
     padding: 30px 50px;
-    position: fixed;
+    position: absolute;
     top: 0;
+    right: 0;
+    left: 0;
     background: transparent;
     transition: all 0.4s;
+    z-index: 100;
+    background: transparent;
     &__logo {
         &__title {
             font-size: 25px;
@@ -83,10 +87,10 @@
                         transition: all 0.5s;
                         margin-bottom: -3px;
                     }
-                    &:hover:after {
-                        width: 100%;
-                        transition: all 0.5s;
-                    }
+                    // &:hover:after {
+                    //     width: 100%;
+                    //     transition: all 0.5s;
+                    // }
                 }
                 @media screen and (max-width: 768px) {
                     font-size: 35px;
